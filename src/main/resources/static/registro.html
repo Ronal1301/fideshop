@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- -->
+<html lang="es">
+    <head>
+        <title>FideShop</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página de la Tienda FideShop"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <header class="encabezado">
+            <nav class='nav'>
+                <a href="index.html" class='logo nav-link'>FideShop</a>
+                <ul class='nav-menu'>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="index.html">Inicio</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="computadoras.html">Computadoras</a></li> 
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="perifericos.html">Perifericos</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="accesorios.html">Accesorios</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="celulares.html">Celulares</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="contactenos.html">Contactenos</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="encuentrenos.html">Encuentranos</a></li>
+                </ul>
+            </nav>
+            <hr/>
+        </header>
+        <section class="container">
+            <div class="registro">
+                <div class="content">
+                    <p>Formulario de registro</p>
+                </div>
+                <br>
+                <article>
+                    <form action="/cliente/registro.jsp" method='post'>
+                        <input type="hidden" name="codigo" value="1" />
+                        <fieldset>
+                            <label>Nombre completo</label>
+                            <input type="text" name="nombre" value="" size="30" />
+                        </fieldset>
+                        <fieldset>
+                            <label>Cedula</label>
+                            <input type="text" name="cedula" value="" size="30" />
+                        </fieldset>
+                        <fieldset>
+                            <label>Correo electronico</label>
+                            <input type="text" name="correo" value="" size="30" />
+                        </fieldset>
+                        <fieldset>
+                            <label>Clave</label>
+                            <input type="password" name="clave" value="" size="10" />
+                        </fieldset>
+                        <fieldset>
+                            <label>Direccion exacta</label>
+                            <textarea name="direccion" rows="4" cols="40">
+                            </textarea>
+                        </fieldset>
+                        <input type='submit' value='Enviar' />
+                    </form>
+                </article>
+            </div>
+        </section>
+        <footer class="footer">
+            Desarrollos Tecnologicos &COPY; 2023 <address>Coronado Costa Rica</address>
+        </footer>
+
+    </body>
+</html>
